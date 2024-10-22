@@ -1,1 +1,50 @@
 /* Customizarea elementelor  */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    font-family: "Poppins", sans-serif;
+}
+
+.sectiunea1{
+    display: block;
+    /* background-color:aliceblue; */
+    /* justify-content: center; nu e necesar*/
+    text-align: center;
+}
+
+.sectiunea2{
+    display: flex;
+    text-align: center;
+    /* background-color: azure; */
+}
+.sectiunea2-paragraf{
+    text-align: left;
+}
+.sectiunea2-formular{
+    text-align: center;
+}
+
+.sectiunea3{
+    /* background-color: antiquewhite; */
+    display: grid; /* grid aseaza elementele in mod proportionat/egal pe un singur rand (in cazul asta 3 elemente egale) */
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); /*aseaza elementele in linie */
+    justify-content: space-between;
+    text-align: center;
+    gap: 35px;
+}
+
+/* .banca{
+    background-color: aliceblue;
+    border-radius:25px;
+}
+.sms{
+    background-color:bisque;
+    border-radius:25px;
+}
+.contact{
+    background-color: beige;
+    border-radius:25px;
+} */
