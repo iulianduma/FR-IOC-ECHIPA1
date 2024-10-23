@@ -1,4 +1,4 @@
-body{
+body {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -9,81 +9,145 @@ body{
 
 .container1 {
     display: grid;
-    grid-template-columns: 0.3fr 1fr 1fr;
-    grid-template-rows: min-content max-content max-content max-content max-content;
-    gap: 10px 10px;
     grid-auto-flow: row dense;
+    grid-template-columns: 0.3fr 1.1fr 0.9fr;
+    grid-template-rows: minmax(2vw, 6vw) minmax(10vw, 50vw) minmax(2vw, 40vw) max-content max-content;
+    gap: 10px 10px;
     grid-template-areas:
-        "btMeniu addBanner addBanner"
+        "a0 addBanner addBanner"
         "a1 b1 c1"
-        "a2 b2 b2"
-        "a3 b3 c3"
+        "a2 b2 c2"
+        "a3 b3 b3"
         "a4 b4 b4";
+    /* Am definit un grid de tip 'row dense' folosind un template 3col x 5row. 
+        In modul acesta avem definita structura fixa   */
 }
 
-.btMeniu {
-    grid-area: btMeniu;
-   
+.a0 {
+    /* Definim primul element.  
+    In matricea de div-uri creata dimensionata dr-stg sus-jos */
+    /*a0 - Definit dar nefolosit*/
+    grid-area: a0;
+
 }
 
 .addBanner {
+    /*B0 si C0*/
     grid-area: addBanner;
     color: white;
     font-family: "Poppins", sans-serif;
 }
 
+#logo {
+    /*Titlul paginii, cu dimensiuni raportate la dimensiunea ferestrei ViewWindow*/
+    text-align: center;
+    text-shadow: 2px 0.5vw 4px #000000;
+    font-size: 5vw;
+    padding: 1vw;
+}
+
 .a1 {
-    grid-area: a1;     
+    /*A1 - Definit dar nefolosit momentan*/
+    grid-area: a1;
 }
 
 .b1 {
+    /*b1 - Citat */
     grid-area: b1;
 }
 
-.b1 p{
+.b1 p {
     color: white;
     font-family: "Poppins", sans-serif;
+    text-align: justify;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
-    font-size: 20px;
+    font-size: 1.7vw;
 
 }
+
 .c1 {
+    /*c1 - imagine*/
     grid-area: c1;
 }
 
+.c1 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60vw;
+}
+
 .a2 {
-    grid-area: a2;    
+    /*a2 - Definit dar nefolosit*/
+    grid-area: a2;
 }
 
 .b2 {
     grid-area: b2;
-    background-color: rgb(250, 250, 250,0.1);
+  
+}
+.b2 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 26vw;
+    
 }
 
+.c2 {
+    grid-area: c2;
+  
+}
+.c2 p {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 40px;
+    font-size: 1.7vw;
+
+}
+.c2 h5 {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    text-align: justify;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    padding-right: 40px;
+    font-size: 1.7vw;
+
+}
 .a3 {
+    /*a3*/
     grid-area: a3;
-    background-color: rgb(250, 250, 250,0.1);
 }
 
 .b3 {
+    /*b2 si c2 - Raportat la matrice*/
     grid-area: b3;
-    background-color: rgb(250, 250, 250,0.1);
+    padding: 4vw;
+    box-shadow: 12px 5px 14px #8b4141;
+    border-radius: 20vw;
 }
 
-.c3 {
-    grid-area: c3;
-    background-color: rgb(250, 250, 250,0.1);
+.b3 img {
+    height: 100%;
+    border-radius: 20vw;
+
 }
 
 .a4 {
     grid-area: a4;
-    background-color: rgb(250, 250, 250,0.1);
+    background-color: rgb(250, 250, 250, 0.1);
 }
 
 .b4 {
     grid-area: b4;
-    background-color: rgb(250, 250, 250,0.1);
+    background-color: rgb(250, 250, 250, 0.1);
 }
