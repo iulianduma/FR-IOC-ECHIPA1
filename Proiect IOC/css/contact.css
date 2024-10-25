@@ -1,1 +1,107 @@
 /* Customizarea elementelor  */
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  color: white;
+  text-shadow: 4px 2px 4px #000000;
+}
+
+.meniu_nav{
+  text-decoration: none;
+}
+.meniu_nav a:hover {
+
+  /* text-shadow: 0 0 1px #ffca60, 0 0 3px #ca5757;*/
+   cursor: pointer;
+   color: #14124c;
+   font-weight: bold;
+ }
+
+ .container {  
+  display: grid;
+  grid-template-columns: 0.1fr 1fr 1fr 0.01fr;
+  grid-template-rows: min-content max-content max-content max-content max-content;
+  gap: 20px 22px;
+  grid-auto-flow: row dense;
+  grid-template-areas:
+    ". Contact Media ."
+    ". locatie facebook ."
+    ". telefon instagram ."
+    ". email youtube ."
+    ". . tik-tok .";
+    
+  font-family: "Poppins", sans-serif;
+  text-align: justify;
+  font-size: 1.2vw;
+  color: white;
+}
+
+i {
+  color: white;
+  text-shadow: 4px 2px 4px #000000;
+}
+
+.telefon { 
+  grid-area: telefon; 
+}
+
+.telefon p{
+  color: white;
+  font-family: "Poppins", sans-serif;
+  text-align: justify;
+  font-size: 1.2vw;
+  text-shadow: 4px 2px 4px #000000;
+}
+
+.email { 
+  grid-area: email; 
+}
+
+.container a{
+  text-decoration: none;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  text-align: justify;
+  font-size: 1.2vw;
+  text-shadow: 4px 2px 4px #000000;
+}
+
+.email a:hover
+.locatie a:hover
+.facebook a:hover
+.instagram a:hover
+.tik-tok a:hover{
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+.Contact { 
+  grid-area: Contact; 
+}
+
+.locatie { 
+  grid-area: locatie; 
+}
+
+.Media { 
+  grid-area: Media; 
+}
+
+.facebook { 
+  grid-area: facebook; 
+}
+
+.instagram { 
+  grid-area: instagram; 
+}
+
+.youtube { 
+  grid-area: youtube; 
+}
+
+.tik-tok { 
+  grid-area: tik-tok; 
+}
