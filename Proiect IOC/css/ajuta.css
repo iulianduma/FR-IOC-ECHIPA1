@@ -1,57 +1,116 @@
 /* Customizarea elementelor  */
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-.container{
+
+.container {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 18px;
+    font-size: 1.3vw;
     color: white;
     text-shadow: 2px 2px 4px #000000;
+
 }
 
-.sectiunea1{
+.container p {
+    text-align: justify;
+}
+.container h4 {
+    text-align: center;
+    font-size: 1.8vw;
+}
+.container h2 {
+    text-align: center;
+    font-size: 2.2vw;
+}
+.container img{
+    margin-left: auto;
+    margin-right: auto;
+    width: 5vw;
+    height: 5vw;
+}
+.sectiunea1 {
     display: block;
     /* background-color:aliceblue; */
     /* justify-content: center; nu e necesar*/
-    text-align: center;
+
 }
 
-.sectiunea2{
+.sectiunea2 {
     display: flex;
     text-align: center;
-    /* background-color: azure; */
 }
-.sectiunea2-paragraf{
-    text-align: left;
+
+.sectiunea2-paragraf {
+    text-align: justify;
 }
-.sectiunea2-formular a{
-    text-decoration: none;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 18px;
+.container a:hover{
+    font-weight: bold;
     color: white;
-    text-shadow: 2px 2px 4px #000000;
 }
-.contact a{
+.sectiunea2-formular a {
     text-decoration: none;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 18px;
+    font-size: 1vw;
     color: white;
     text-shadow: 2px 2px 4px #000000;
 }
 
-.sectiunea3{
-    /* background-color: antiquewhite; */
-    display: grid; /* grid aseaza elementele in mod proportionat/egal pe un singur rand (in cazul asta 3 elemente egale) */
-    grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); /*aseaza elementele in linie */
+.contact a {
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 1vw;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.sectiunea3 {
+    display: inline-flex;
+    /* grid aseaza elementele in mod proportionat/egal pe un singur rand (in cazul asta 3 elemente egale) */
+    grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
+    /*aseaza elementele in linie */
     justify-content: space-between;
     text-align: center;
-    gap: 35px;
+    gap: 25px;
+    font-size: 1vw;
 }
+.button {
+    background-color: #CA5757; /* Green */
+    color: white;
+    text-shadow: 4px 2px 4px #000000;
+    font-family: "Poppins", sans-serif;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 40px;
+    font-size: 1.7vw;
+    border: none;
+
+    padding: 1vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20%
+    
+  }
+  .button a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px 3px #000000;
+  }
+  .button a:hover{
+   
+    color: white;
+  
+  }

@@ -1,1 +1,82 @@
 /* Customizarea elementelor  */
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: white;
+    text-shadow: 4px 2px 4px #000000;
+}
+.sub_cont{
+    display: inline-flex;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.citat {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    text-align: justify;
+    font-size: 1.6vw;
+    padding-left: 15vw;
+    padding-right: 5vw;
+    justify-content: center;
+    padding-top: 70px;
+}
+
+.log1 img{
+    display: inline-flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20vw;
+    border-radius: 40px;
+    /* box-shadow: 2px 2px 2px #050505; */
+    flex: 0.2;
+    padding: 1vw;  
+}
+
+
+.proiect {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    text-align: justify;
+    font-size: 1.3vw;
+
+}
+
+.proiect h4 {
+    padding-top: 4vw;
+    padding-left: 15vw;
+    padding-right: 10vw;
+}
+
+.proiect p {
+    padding-left: 15vw;
+    padding-right: 5vw;
+}
+
+.imagini {
+    padding-left: 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 78.25vw;
+
+}
+
+.imagini img {
+    display: inline-flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20vw;
+    border-radius: 40px;
+    /* box-shadow: 2px 2px 2px #050505; */
+    flex: 0.2;
+    padding: 1vw;
+}
+
+.imagini img:hover {
+    flex: 80;
+    width: 45vw;
+    cursor: crosshair;
+}

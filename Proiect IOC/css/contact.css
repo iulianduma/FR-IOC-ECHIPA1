@@ -8,18 +8,37 @@ body {
   text-shadow: 4px 2px 4px #000000;
 }
 
-.meniu_nav{
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 78.25vw;
+}
+
+.logo img {
+  display: inline-flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20vw;
+  border-radius: 40px;
+  /* box-shadow: 2px 2px 2px #050505; */
+  flex: 0.2;
+  padding: 1vw;
+}
+
+.meniu_nav {
   text-decoration: none;
 }
+
 .meniu_nav a:hover {
 
   /* text-shadow: 0 0 1px #ffca60, 0 0 3px #ca5757;*/
-   cursor: pointer;
-   color: #14124c;
-   font-weight: bold;
- }
+  cursor: pointer;
+  color: #14124c;
+  font-weight: bold;
+}
 
- .container {  
+.container {
   display: grid;
   grid-template-columns: 0.1fr 1fr 1fr 0.01fr;
   grid-template-rows: min-content max-content max-content max-content max-content;
@@ -31,7 +50,7 @@ body {
     ". telefon instagram ."
     ". email youtube ."
     ". . tik-tok .";
-    
+
   font-family: "Poppins", sans-serif;
   text-align: justify;
   font-size: 1.2vw;
@@ -43,11 +62,11 @@ i {
   text-shadow: 4px 2px 4px #000000;
 }
 
-.telefon { 
-  grid-area: telefon; 
+.telefon {
+  grid-area: telefon;
 }
 
-.telefon p{
+.telefon p {
   color: white;
   font-family: "Poppins", sans-serif;
   text-align: justify;
@@ -55,11 +74,11 @@ i {
   text-shadow: 4px 2px 4px #000000;
 }
 
-.email { 
-  grid-area: email; 
+.email {
+  grid-area: email;
 }
 
-.container a{
+.container a {
   text-decoration: none;
   color: white;
   font-family: "Poppins", sans-serif;
@@ -68,40 +87,36 @@ i {
   text-shadow: 4px 2px 4px #000000;
 }
 
-.email a:hover
-.locatie a:hover
-.facebook a:hover
-.instagram a:hover
-.tik-tok a:hover{
+.email a:hover .locatie a:hover .facebook a:hover .instagram a:hover .tik-tok a:hover {
   cursor: pointer;
   color: white;
   font-weight: bold;
 }
 
-.Contact { 
-  grid-area: Contact; 
+.Contact {
+  grid-area: Contact;
 }
 
-.locatie { 
-  grid-area: locatie; 
+.locatie {
+  grid-area: locatie;
 }
 
-.Media { 
-  grid-area: Media; 
+.Media {
+  grid-area: Media;
 }
 
-.facebook { 
-  grid-area: facebook; 
+.facebook {
+  grid-area: facebook;
 }
 
-.instagram { 
-  grid-area: instagram; 
+.instagram {
+  grid-area: instagram;
 }
 
-.youtube { 
-  grid-area: youtube; 
+.youtube {
+  grid-area: youtube;
 }
 
-.tik-tok { 
-  grid-area: tik-tok; 
+.tik-tok {
+  grid-area: tik-tok;
 }
