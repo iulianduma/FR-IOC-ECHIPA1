@@ -73,7 +73,6 @@
 
 .sectiunea3 {
     display: inline-flex;
-    /* grid aseaza elementele in mod proportionat/egal pe un singur rand (in cazul asta 3 elemente egale) */
     grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
     /*aseaza elementele in linie */
     justify-content: space-between;
